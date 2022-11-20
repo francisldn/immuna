@@ -13,7 +13,7 @@
 ## Overview
 * The app is created using **TypeScript** & **React**
 * **GraphQL with Apollo** is used to fetch data from Uniswap V3 pools using the GraphQL [endpoint](https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3) provided by Uniswap
-  * Note that I have used the endpoint provided by Uniswap instead of the suggested APIs above due to data availability
+  * Note that I have used the [endpoint](https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3) provided by Uniswap instead of the suggested APIs above due to data availability
   * GraphQL query string is saved in the `gqlQuery.ts` file
 * **TailwindCSS** is used for styling
 * To access the pages, 2 endpoints have been created using ``react-router-dom``
