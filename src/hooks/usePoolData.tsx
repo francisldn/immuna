@@ -57,8 +57,6 @@ export const PoolProvider = ({ children }: { children: React.ReactNode }) => {
     }
   }, [data, loading])
 
-  console.log({ poolsData })
-
   return (
     <PoolContext.Provider
       value={{

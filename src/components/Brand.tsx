@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+
 export default function Brand({ width, height }: { width: string; height: string }) {
   return (
     <Link to='/'>
