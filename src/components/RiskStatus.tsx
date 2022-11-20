@@ -54,7 +54,7 @@ export default function RiskStatus({ riskText }: RiskStatusProps) {
             <h2 className='text-lg'>Risk Status</h2>
             <RiskStatusButton riskText={riskText} onClick={() => {}} />
           </div>
-          <div className='flex flex-col bg-[#f5f5f5f5] mt-[1.25rem] pl-[1rem] mr-[2.4375rem] pt-[1rem] rounded-[8px]'>
+          <div className='flex flex-col bg-[#f5f5f5] mt-[1.25rem] pl-[1rem] mr-[2.4375rem] pt-[1rem] rounded-[8px]'>
             <div className='text-sm flex flex-col gap-2'>
               <h3 className='text-[#5C5C5C]'>Triggle:</h3>
               <p>{`The asset's risk profile has changed significantly.`}</p>
