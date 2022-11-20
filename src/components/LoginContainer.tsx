@@ -3,7 +3,7 @@ import ConnectButton from "./ConnectButton"
 
 export default function LoginContainer() {
   return (
-    <div className=' flex flex-col w-[82%] bg-white rounded-md max-h-[68.55%] z-10 mr-[5.125rem] ml-[3.0625rem] mb-[12.375rem] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.07)]'>
+    <div className=' flex flex-col w-[82%] bg-white rounded-md max-h-[68.55%] z-10 mr-[5.125rem] ml-[3.0625rem] mb-[12.375rem] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.07)] min-w-[35rem]'>
       <h2 className='text-xxl text-center mt-[3.75rem] p-0'>Welcome to Immuna!</h2>
       <p className='text-xl text-center'>Connect your wallet</p>
       <form className='flex flex-col self-center items-center mt-[5.625rem] w-full'>

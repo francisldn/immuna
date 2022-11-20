@@ -9,10 +9,10 @@ export default function Login() {
     <div className='w-screen h-screen overflow-y-hidden'>
       <LoginHeader />
       <div className='flex w-screen h-screen -z-20'>
-        <div className='w-[49%]'>
+        <div className='w-[49%] z-20'>
           <img src='login.jpg' alt='' className='w-full h-full object-cover' />
         </div>
-        <div className='bg-bg-login w-[51%] flex justify-center pt-[6.375rem]'>
+        <div className='bg-bg-login w-[51%] flex justify-center pt-[6.375rem] min-w-[42rem]'>
           <LoginContainer />
           <Circle />
           <Donut />
