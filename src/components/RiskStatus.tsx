@@ -37,7 +37,7 @@ export default function RiskStatus({ riskText }: RiskStatusProps) {
     <article
       className={`${
         popUp ? "fixed" : "hidden"
-      } sm:fixed sm:min-w-full sm:h-full sm:bg-[rgb(0,0,0,0.8)] sm:z-10 sm:flex sm:flex-col sm:justify-center sm:items-center`}
+      } sm:fixed sm:min-w-full sm:h-full sm:bg-[rgb(0,0,0,0.8)] sm:z-10 sm:flex sm:flex-col sm:px-[25%] sm:pt-[8rem]`}
       onClick={(e: React.MouseEvent) => CloseLightBoxFromBackground(e)}
       ref={divRef}
     >
