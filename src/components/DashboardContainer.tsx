@@ -11,7 +11,7 @@ export default function DashboardContainer() {
   return (
     <article className='flex flex-col bg-[#F8F8F8] h-full'>
       <DashboardHeader />
-        <TableContainer />
+      <TableContainer />
       {popUp && <RiskStatus riskText={riskStatus} />}
       <div className='absolute bottom-[3%]'>
         <PageNumber />

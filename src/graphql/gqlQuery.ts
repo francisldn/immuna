@@ -40,25 +40,25 @@ export const poolInitialData = [
 
 export const POOLS_QUERY = gql`
   query Pools($id: [String]!) {
-  pools(where: {id_in: $id}, orderBy: liquidity, orderDirection: desc) {
-    id
-    liquidity
-    token0 {
+    pools(where: { id_in: $id }, orderBy: liquidity, orderDirection: desc) {
       id
-      name
-      symbol
-      totalValueLocked
-      totalValueLockedUSD
-    }
-    token1 {
-      id
-      name
-      symbol
-      totalValueLocked
-      totalValueLockedUSD
+      liquidity
+      token0 {
+        id
+        name
+        symbol
+        totalValueLocked
+        totalValueLockedUSD
+      }
+      token1 {
+        id
+        name
+        symbol
+        totalValueLocked
+        totalValueLockedUSD
+      }
     }
   }
-}
 `
 
 export const SINGLE_POOL_QUERY = gql`

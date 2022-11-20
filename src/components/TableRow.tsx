@@ -36,7 +36,7 @@ export default function TableRow({ rowColor, pool }: TableRowProps) {
         <div>
           <img src={icon} alt='' />
         </div>
-        <div className="w-[18%] min-w-[6rem]">
+        <div className='w-[18%] min-w-[6rem]'>
           <span className='text-md'>{`${poolAddress.slice(0, 6)}...${poolAddress.slice(
             -4,
             poolAddress.length,
