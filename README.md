@@ -1,8 +1,4 @@
 # IMMUNA
-
-<img src="./login.png" height="" alt="login page" height={250}>
-<img src="./dashboard.png" alt="dashboard page" height={250}>
-
 ## Requirements
 * Implement a dummy react app in TypeScript following the given figma design
 * All the information is hardcoded, except for the Balance of the pool column
