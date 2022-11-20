@@ -22,7 +22,7 @@ export default function TableContainer() {
             pools.map((pool: Pool, index: number) => (
               <TableRow
                 key={pool.poolAddress}
-                rowColor={index % 2 === 0 ? "white" : "lightblue"}
+                rowColor={index % 2 === 0 ? "bg-white" : "bg-db-row-lightblue"}
                 pool={pool}
               />
             ))}

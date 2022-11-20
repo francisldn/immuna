@@ -21,6 +21,7 @@
   * ``http://localhost:3000/dashboard`` - **Dashboard** page
 * Additionally, ``Error Boundary`` and ``Loading`` pages are created to handle error and loading scenarios
 * ``Risk Status`` on **Dashboard** page is interactive - user can click on the Risk Status and a Risk Status pop-up will appear on the screen
+* The liquidity pools are presented in descending order of liquidity. ``Risk Status`` is assigned based on figma.
 
 ## How to Start the App
 1. To start the app, first clone this repo

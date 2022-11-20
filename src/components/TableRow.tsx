@@ -25,7 +25,7 @@ export default function TableRow({ rowColor, pool }: TableRowProps) {
   }
 
   return (
-    <tr className={`flex pl-[1.5rem] h-[4.0625rem] items-center bg-db-row-${rowColor}`}>
+    <tr className={`flex pl-[1.5rem] h-[4.0625rem] items-center ${rowColor}`}>
       <td className='flex gap-[1.125rem] items-center w-[20%]'>
         <p className='text-sm'>{protocol}</p>
         <button>
@@ -36,9 +36,9 @@ export default function TableRow({ rowColor, pool }: TableRowProps) {
         <div>
           <img src={icon} alt='' />
         </div>
-        <div>
+        <div className="w-[18%]">
           <span className='text-md'>{`${poolAddress.slice(0, 6)}...${poolAddress.slice(
-            -3,
+            -4,
             poolAddress.length,
           )}`}</span>
         </div>
