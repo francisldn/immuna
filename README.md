@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# IMMUNA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Requirements
+* Implement a dummy react app in TypeScript following the given figma design
+* All the information is hardcoded, except for the Balance of the pool column
+* To fetch the "Balance" column data from the suggested APIs below
+* Focus on quality of code, accuracy of design implementation and bug-free implementation
+* Suggested APIs:
+  * https://coinmarketcap.com/api/
+  * https://defillama.com/docs/api
+  * https://www.coingecko.com/en/api
 
-## Available Scripts
+## Overview
+* The app is created using **TypeScript** & **React**
+* **GraphQL with Apollo** is used to fetch data from Uniswap V3 pools using the GraphQL [endpoint](https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3) provided by Uniswap
+  * Note that I have used the endpoint provided by Uniswap instead of the suggested APIs above due to data availability
+  * GraphQL query string is saved in the `gqlQuery.ts` file
+* **TailwindCSS** is used for styling
+* To access the pages, 2 endpoints have been created using ``react-router-dom``
+  * ``http://localhost:3000/`` - **Login** page
+  * ``http://localhost:3000/dashboard`` - **Dashboard** page
+* Additionally, ``Error Boundary`` and ``Loading`` pages are created to handle error and loading scenarios
+* ``Risk Status`` on **Dashboard** page is interactive - user can click on the Risk Status and a Risk Status pop-up will appear on the screen
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How to Start the App
+1. To start the app, first clone this repo
+```
+git clone https://github.com/francisldn/immuna.git
+```
+2. Go to the root directory and install dependencies
+```
+cd immuna
+npm install
+```
+3. Run the app from root directory
+```
+npm run start
+```
