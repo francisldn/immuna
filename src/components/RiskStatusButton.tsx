@@ -10,7 +10,7 @@ export default function RiskStatusButton({ riskText, onClick }: RiskStatusProps)
     <>
       {riskText === "Green" ? (
         <button
-          className='bg-rs-green text-rs-text-green w-[6.25rem] h-[2.25rem] rounded-[30px]'
+          className='bg-rs-green text-rs-text-green w-[6.25rem] h-[2.25rem] rounded-[30px] font-[500]'
           onClick={onClick}
         >
           {riskText}
