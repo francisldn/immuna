@@ -1,7 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 import SearchBar from "./SearchBar"
 
 export default function DashboardHeader() {
+  const [clicked, setClicked] = useState(false)
+  const hardCodedAddress = "0xBad7b0AeAa957A8Ad81A79335381c8639fF9F2C9"
+
+  async function copyTextToClipboard(text: string) {
+    setClicked(true)
+    await navigator.clipboard.writeText(text)
+    const timer = setTimeout(() => setClicked(false), 1000)
+
+    return () => clearTimeout(timer)
+  }
+
   return (
     <header className='flex items-center pr-[1.25rem] pl-[1.25rem] mt-[1rem]'>
       <h2 className='flex-1 font-[500] text-lg'>Immuna Monitor Portal</h2>
@@ -13,13 +24,22 @@ export default function DashboardHeader() {
           </div>
           <p className='text-sm'>ETH</p>
         </div>
-        <div className='flex flex-1 bg-bg-address rounded-[22px] h-full items-center pl-[1.8125rem]'>
-          <span className='text-sm'>{"0xBAD7...E116"}</span>
-          <span>{}</span>
+        <div className='flex flex-1 bg-bg-address rounded-[22px] h-full items-center pl-[1.8125rem] text-sm'>
+          <span className='self-center'>{`${hardCodedAddress.slice(
+            0,
+            6,
+          )}...${hardCodedAddress.slice(-4, hardCodedAddress.length)}`}</span>
         </div>
       </div>
-      <button className='flex rounded-full bg-bg-address w-[2.75rem] h-[2.75rem] items-center justify-center'>
-        <img src='copy.png' alt='' />
+      <button
+        className='flex rounded-full bg-bg-address w-[2.75rem] h-[2.75rem] items-center justify-center'
+        onClick={() => copyTextToClipboard(hardCodedAddress)}
+      >
+        {clicked ? (
+          <img src='tick.png' alt='' className='w-[70%] h-[70%] object-fit' />
+        ) : (
+          <img src='copy.png' alt='' />
+        )}
       </button>
     </header>
   )

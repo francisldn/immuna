@@ -28,23 +28,24 @@ export default function TableRow({ rowColor, pool }: TableRowProps) {
     <tr className={`flex pl-[1.5rem] h-[4.0625rem] items-center ${rowColor}`}>
       <td className='flex gap-[1.125rem] items-center w-[20%]'>
         <p className='text-sm'>{protocol}</p>
-        <button>
+        <a href='https://app.uniswap.org/' target='_blank' rel='noreferrer'>
           <img src='redirect.png' alt='' />
-        </button>
+        </a>
       </td>
       <td className='flex gap-[1.5625rem] items-center w-[30%]'>
         <div>
           <img src={icon} alt='' />
         </div>
-        <div className='w-[18%] min-w-[6rem]'>
+        <div className='w-[18%] min-w-[6rem] tooltip'>
           <span className='text-md'>{`${poolAddress.slice(0, 6)}...${poolAddress.slice(
             -4,
             poolAddress.length,
           )}`}</span>
+          <span className='tooltiptext'>{poolAddress}</span>
         </div>
-        <button>
+        <a href={`https://etherscan.io/address/${poolAddress}`} target='_blank' rel='noreferrer'>
           <img src='redirect.png' alt='' />
-        </button>
+        </a>
       </td>
       <td className='flex items-center w-[30%] text-sm'>{balance(token0, token1)}</td>
       <td className='flex items-center w-[20%] text-md'>
