@@ -13,7 +13,7 @@ export default function SearchBar({ width, placeholder }: SearchProps) {
       <div className='w-[0.875rem] h-[0.875rem]'>
         <img src='srch.png' alt='' />
       </div>
-      <input type='search' placeholder={placeholder} className='text-sm h-full pl-2' />
+      <input type='search' placeholder={placeholder} className='text-sm h-full w-[85%] pl-2' />
     </form>
   )
 }
