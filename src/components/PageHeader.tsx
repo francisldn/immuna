@@ -7,7 +7,7 @@ export default function PageHeader() {
       <div className='flex flex-1 items-center'>
         <h1 className='text-lg font-[500] pr-[3.375rem]'>Dashboard</h1>
         <div>
-          <SearchBar width={"22.04rem"} placeholder={"Search..."} />
+          <SearchBar width={"w-[22.04rem]"} placeholder={"Search..."} />
         </div>
       </div>
       <div className='flex gap-4 items-center'>
