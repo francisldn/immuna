@@ -9,6 +9,7 @@ interface btnProps {
 export default function ConnectButton({ btnText, width, height }: btnProps) {
   return (
     <button
+      type="submit"
       className={`${width} ${height} bg-btn-blue text-white text-lg text-center rounded-[6rem]`}
     >
       {btnText}
