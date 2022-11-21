@@ -17,7 +17,7 @@ export default function DashboardHeader() {
     <header className='flex items-center pr-[1.25rem] pl-[1.25rem] mt-[1rem]'>
       <h2 className='flex-1 font-[500] text-lg'>Immuna Monitor Portal</h2>
       <SearchBar width={"21.3125rem"} placeholder={"Search"} />
-      <div className='flex bg-bg-eth items-center w-[14.8125rem] h-[2.75rem] rounded-[22px] ml-[1rem] mr-[1rem]'>
+      <div className='flex bg-bg-eth items-center w-[14.8125rem] h-[2.75rem] rounded-[22px] ml-[1rem] mr-[1rem] text-[#6C6C6C]'>
         <div className='flex gap-4 pl-[1.5rem] pr-[0.875rem]'>
           <div className='flex  items-center'>
             <img src='eth.png' alt='' />
